@@ -137,6 +137,10 @@ class WordCounter
     @counts.to_a.sort_by {|x| x[1] }.reverse
   end
 
+  def normalized_sorted_pairs_by_corpus
+
+  end
+
   def normalized_sorted_pairs
     counts = @counts.to_a
     sum = counts.map{|x| x[1] }.inject{|sum,x| sum + x }
